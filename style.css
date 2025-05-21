@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.teclado {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background: #222;
+    padding: 20px 0;
+    z-index: 10;
+    user-select: none;
+}
+
+.tecla {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(78, 84, 200, 0.6);
+    transition: transform 0.1s ease;
+}
+
+.tecla:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(78, 84, 200, 0.8);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+ 
